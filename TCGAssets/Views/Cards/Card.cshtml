@@ -1,0 +1,12 @@
+﻿@model JsonResult 
+@{
+    Layout = null;
+    Response.Write(Model.Data);
+}
+
+<div style="text-align:center;">
+    @if(Model != null)
+    {
+        <img src="@Model.Data" alt="@Model.Data"/>
+    }
+</div>
