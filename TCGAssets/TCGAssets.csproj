@@ -161,14 +161,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Yugioh\Card.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Assets\Yugioh\Img\Monsters\00010000.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\00032864.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\00035699.jpg" />
@@ -270,6 +267,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\01527418.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01533292.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01546123.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\01546124.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01557341.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01561110.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01566817.jpg" />
@@ -294,9 +292,11 @@
     <Content Include="Assets\Yugioh\Img\Monsters\01834753.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01855932.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01861629.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\01861630.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01872843.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01929294.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01945387.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\01948619.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01953925.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01966438.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\01980574.jpg" />
@@ -310,6 +310,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\02091298.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02095764.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02102065.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\02111707.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02118022.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02129638.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02134346.jpg" />
@@ -317,6 +318,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\02158562.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02191144.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02196767.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\02203790.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02204038.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02220237.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02250266.jpg" />
@@ -328,6 +330,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\02333365.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02347477.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02356994.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\02368215.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02377034.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02403771.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02407147.jpg" />
@@ -349,6 +352,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\02602411.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02618045.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02619149.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\02645637.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\02648201.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02665273.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02671330.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\02694423.jpg" />
@@ -463,6 +468,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\04103668.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04130270.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04141820.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\04145852.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04148264.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04162088.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04179255.jpg" />
@@ -476,6 +482,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\04334811.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04335427.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04335645.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\04367330.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04376658.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04388680.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04392470.jpg" />
@@ -496,6 +503,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\04722253.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04732017.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04756629.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\04779091.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04779823.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04786063.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\04796100.jpg" />
@@ -518,6 +526,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\05014629.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05041348.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05043010.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\05043011.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\05043012.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05053103.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05087128.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05126490.jpg" />
@@ -574,6 +584,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\05929801.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05969957.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\05975022.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\05998840.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06007213.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06021033.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06022371.jpg" />
@@ -587,6 +598,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\06142213.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06142488.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06150044.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\06150045.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06165656.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06205579.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06214884.jpg" />
@@ -603,6 +615,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\06353603.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06367785.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06368038.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\06368039.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06387204.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06400512.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\06442944.jpg" />
@@ -664,7 +677,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\07409792.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07443908.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07445307.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\07459013.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07478431.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\07480763.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07489323.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07500772.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\07526150.jpg" />
@@ -736,6 +751,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\08567955.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\08581705.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\08594079.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\08602351.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\08611007.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\08634636.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\08649148.jpg" />
@@ -824,42 +840,28 @@
     <Content Include="Assets\Yugioh\Img\Monsters\09910360.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\09929398.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000000.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10000001.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10000002.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000010.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10000011.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000020.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10000021.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10000022.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000030.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000040.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000080.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10000090.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10002346.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100200173.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100229001.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100229002.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100229003.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100229007.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100250001.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100253001.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257001.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257006.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257011.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257016.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257021.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257026.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257036.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257041.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257046.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257051.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257061.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257066.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257071.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257076.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257081.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257086.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100257096.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100259001.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100259009.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100259017.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100259025.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\100259033.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\100259041.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10026986.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10028593.jpg" />
@@ -872,9 +874,6 @@
     <Content Include="Assets\Yugioh\Img\Monsters\10071151.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10071456.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10097168.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\101011014.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\101011015.jpg" />
-    <Content Include="Assets\Yugioh\Img\Monsters\101011043.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\101012001.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\101012046.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\101012047.jpg" />
@@ -911,12 +910,14 @@
     <Content Include="Assets\Yugioh\Img\Monsters\10530913.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10532969.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10538007.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10547580.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10552026.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10560119.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10591919.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10598400.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10613952.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10642488.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\10669138.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10678778.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10698416.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\10705656.jpg" />
@@ -972,6 +973,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\11475049.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\11502550.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\11508758.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\11510448.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\11522979.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\11548522.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\11549357.jpg" />
@@ -1182,6 +1184,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\14541657.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14553285.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14558127.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\14558128.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14568951.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14575467.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14577226.jpg" />
@@ -1207,8 +1210,10 @@
     <Content Include="Assets\Yugioh\Img\Monsters\14882493.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14886469.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14898066.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\14898067.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14936691.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14943837.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\14970113.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14977074.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14983497.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\14989021.jpg" />
@@ -1306,6 +1311,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\16188701.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\16191953.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\16195942.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\16195943.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\16197610.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\16209941.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\16222645.jpg" />
@@ -1484,6 +1490,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\18828179.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\18837926.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\18842395.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\18865703.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\18891691.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\18914778.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\18940556.jpg" />
@@ -1513,6 +1520,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\19261966.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\19307353.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\19310321.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\19324993.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\19327348.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\19333131.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\19353570.jpg" />
@@ -1561,6 +1569,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\20127343.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20137754.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20154092.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\20155904.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20174189.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20191720.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20193924.jpg" />
@@ -1601,6 +1610,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\20665527.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20700531.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20721928.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\20721929.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20747792.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20758643.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\20785975.jpg" />
@@ -1674,6 +1684,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\21817254.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\21830679.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\21844576.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\21844577.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\21858819.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\21887175.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\21887179.jpg" />
@@ -1773,6 +1784,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\23338098.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23379054.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23401839.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\23401840.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23408872.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23421244.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23431858.jpg" />
@@ -1793,7 +1805,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\23689428.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23689697.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23693634.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\23720856.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23732205.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\23740893.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23756165.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23770284.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23771716.jpg" />
@@ -1815,6 +1829,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\23971061.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23979249.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23995346.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\23995347.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\23995348.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\23998625.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24025620.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24027078.jpg" />
@@ -1850,6 +1866,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\24419823.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24432029.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24433920.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\24433921.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24435369.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24484270.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\24487411.jpg" />
@@ -1880,6 +1897,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\24996659.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25034083.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25109950.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\25119460.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25123713.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25132288.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25148255.jpg" />
@@ -1890,6 +1908,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\25200959.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25206027.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25236056.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\25244515.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25247218.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25259669.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25262697.jpg" />
@@ -1934,6 +1953,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\25862681.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25866285.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25882881.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\25904894.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25920413.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25924653.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\25935625.jpg" />
@@ -2048,6 +2068,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\27873305.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\27877771.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\27911549.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\27911550.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\27918365.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\27927359.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\27944249.jpg" />
@@ -2096,6 +2117,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\28593329.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\28593363.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\28601770.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\28630501.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\28637168.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\28674152.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\28677304.jpg" />
@@ -2137,6 +2159,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\29311166.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\29330706.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\29343734.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\29353756.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\29357687.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\29357956.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\29380133.jpg" />
@@ -2252,6 +2275,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31111109.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31118030.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31122090.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31122091.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31173519.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31175914.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31181711.jpg" />
@@ -2267,6 +2291,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31320433.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31339260.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31353051.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31383545.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31385077.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31386180.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31437713.jpg" />
@@ -2282,6 +2307,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31553716.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31557782.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31560081.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31563350.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31571902.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31615285.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31629407.jpg" />
@@ -2290,8 +2316,10 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31692182.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31709826.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31733941.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31755044.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31759689.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31764353.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31764700.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31766317.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31768112.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31772684.jpg" />
@@ -2301,6 +2329,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31826057.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31829185.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31833038.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\31833039.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31887905.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31890399.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31897444.jpg" />
@@ -2313,7 +2342,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\31986288.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\31987274.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32003338.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\32003339.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32012841.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\32012842.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32013448.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32146097.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32176662.jpg" />
@@ -2338,6 +2369,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\32393580.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32446630.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32448765.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\32448766.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32452818.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32465539.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\32472237.jpg" />
@@ -2498,6 +2530,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\34961968.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\34966096.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\34968834.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\34974462.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\34989413.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\35050257.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\35052053.jpg" />
@@ -2576,6 +2609,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\36331074.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36352429.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36354007.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\36354008.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36378213.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36405256.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36407615.jpg" />
@@ -2617,6 +2651,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\36931229.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36953371.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\36956512.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\36996508.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\37021315.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\37038993.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\37043180.jpg" />
@@ -2684,7 +2719,13 @@
     <Content Include="Assets\Yugioh\Img\Monsters\37993923.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38007744.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38026562.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38030232.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38033121.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38033122.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38033123.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38033124.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38033125.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\38033126.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38035986.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38041940.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\38049541.jpg" />
@@ -2799,13 +2840,16 @@
     <Content Include="Assets\Yugioh\Img\Monsters\39703254.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39711336.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39732186.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\39751093.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39751094.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\39752820.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39761138.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39765958.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39806198.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39817919.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39823987.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39829561.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\39853199.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39890958.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39892082.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\39905966.jpg" />
@@ -2869,6 +2913,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\40634253.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40636712.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40640057.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\40640058.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\40640059.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40659562.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40663548.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40666140.jpg" />
@@ -2891,6 +2937,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\40921744.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40933924.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40937767.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\40941889.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40945356.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40975574.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\40991587.jpg" />
@@ -2914,6 +2961,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\41181774.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41201555.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41209827.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\41209828.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41218256.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41224658.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41230939.jpg" />
@@ -2926,6 +2974,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\41307269.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41309158.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41329458.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\41375811.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41382147.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41386308.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41392891.jpg" />
@@ -2938,7 +2987,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\41442341.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41456841.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41462083.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\41462084.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41463181.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\41463182.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41470137.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41493640.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\41517789.jpg" />
@@ -2973,8 +3024,10 @@
     <Content Include="Assets\Yugioh\Img\Monsters\42006475.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42009836.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42023223.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\42024143.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42029847.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42035044.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\42035045.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42055234.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42071342.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42082363.jpg" />
@@ -3021,6 +3074,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\42685062.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42713844.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42717221.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\42737833.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42752141.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42790071.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\42810973.jpg" />
@@ -3105,6 +3159,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\44072894.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44073668.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44088292.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\44097050.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44125452.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44155002.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44163252.jpg" />
@@ -3128,6 +3183,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\44436472.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44505297.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44508094.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\44508095.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44509529.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44519536.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\44586426.jpg" />
@@ -3171,6 +3227,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\45042329.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45045866.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45078193.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\45082499.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45118716.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45121025.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45141844.jpg" />
@@ -3184,6 +3241,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\45221020.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45222299.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45231177.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\45231178.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45282603.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45286019.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45298492.jpg" />
@@ -3223,6 +3281,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\45803070.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45812361.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45815891.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\45819647.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45836982.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45871897.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\45885288.jpg" />
@@ -3293,9 +3352,17 @@
     <Content Include="Assets\Yugioh\Img\Monsters\46897277.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\46924949.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\46925518.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46935289.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\46947713.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\46955770.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\46986414.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986415.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986416.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986417.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986418.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986419.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986420.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\46986421.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47013502.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47017574.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47025270.jpg" />
@@ -3309,6 +3376,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\47120245.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47126872.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47150851.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\47158777.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47217354.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47226949.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\47228077.jpg" />
@@ -3413,6 +3481,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\48829461.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\48868994.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\48891960.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\48905153.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\48928529.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\48948935.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\48964966.jpg" />
@@ -3436,8 +3505,10 @@
     <Content Include="Assets\Yugioh\Img\Monsters\49217579.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49218300.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49221191.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\49249907.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49258578.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49275969.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\49296203.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49352945.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49370026.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49374988.jpg" />
@@ -3469,6 +3540,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\49771608.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49785720.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49791927.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\49791928.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49808196.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49814180.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\49820233.jpg" />
@@ -3606,6 +3678,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\51782995.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51786039.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51788412.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\51808422.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51814159.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51827737.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51828629.jpg" />
@@ -3613,6 +3686,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\51852507.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51855378.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51858306.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\51865604.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51912531.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51916032.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\51925772.jpg" />
@@ -3647,6 +3721,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\52339733.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\52346240.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\52350806.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\52352005.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\52354896.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\52367652.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\52370835.jpg" />
@@ -3896,6 +3971,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\55997110.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\55998462.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\56003780.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\56043446.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\56043447.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\56049970.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\56051086.jpg" />
@@ -3964,12 +4040,14 @@
     <Content Include="Assets\Yugioh\Img\Monsters\56980148.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57019473.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57031794.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\57036718.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57043117.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57043986.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57046845.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57062206.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57108202.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57116033.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\57116034.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57143342.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57238939.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\57261568.jpg" />
@@ -4087,7 +4165,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\58901502.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\58911105.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\58932615.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\58932616.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\58947797.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\58981727.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\58984738.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\58996430.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59019082.jpg" />
@@ -4114,6 +4194,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\59383041.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59392529.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59438930.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\59438931.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59463312.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59464593.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\59479050.jpg" />
@@ -4185,6 +4266,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\60606759.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60634565.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60643553.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\60643554.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60645181.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60666820.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60668166.jpg" />
@@ -4205,6 +4287,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\60954556.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60990740.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60992105.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\60992364.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\60999392.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61019812.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61049315.jpg" />
@@ -4222,6 +4305,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\61269611.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61283655.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61307542.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\61307543.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61318483.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61320914.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\61344030.jpg" />
@@ -4259,6 +4343,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\62000467.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\62007535.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\62015408.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\62015409.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\62017867.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\62023839.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\62034800.jpg" />
@@ -4369,6 +4454,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\63749102.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\63767246.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\63804806.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\63813056.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\63821877.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\63845230.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\63941210.jpg" />
@@ -4392,6 +4478,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\64306248.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64319467.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64332231.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\64335804.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64335805.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64342551.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64373401.jpg" />
@@ -4403,6 +4490,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\64428736.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64454614.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64463828.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\64500000.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64501875.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64511793.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\64514622.jpg" />
@@ -4447,6 +4535,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\65193366.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\65195959.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\65240384.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\65247798.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\65260293.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\65277087.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\65282484.jpg" />
@@ -4553,6 +4642,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\66836598.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\66853752.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\66863374.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\66870733.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\66889139.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\66927994.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\66938505.jpg" />
@@ -4597,6 +4687,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\67508932.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\67511500.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\67532912.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\67547370.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\67556500.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\67559101.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\67586735.jpg" />
@@ -4703,6 +4794,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\69121954.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69123138.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69140098.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\69140099.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69155991.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69170403.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69170557.jpg" />
@@ -4740,6 +4832,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\69764158.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69780745.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69831560.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\69838592.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69840739.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69846323.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\69865139.jpg" />
@@ -4758,6 +4851,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\70084224.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70089580.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70095154.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\70095155.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70101178.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70117860.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70124586.jpg" />
@@ -4772,6 +4866,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\70307656.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70345785.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70355994.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\70369116.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70410002.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70456282.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70458081.jpg" />
@@ -4793,6 +4888,9 @@
     <Content Include="Assets\Yugioh\Img\Monsters\70771599.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70780151.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70781052.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\70781053.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\70781054.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\70781055.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70791313.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70797118.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\70821187.jpg" />
@@ -4815,6 +4913,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\71068263.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\71071546.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\71074418.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\71095768.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\71106375.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\71107816.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\71133680.jpg" />
@@ -4883,6 +4982,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\72144675.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72167543.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72192100.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\72218246.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72228247.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72237166.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72258771.jpg" />
@@ -4892,6 +4992,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\72299832.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72318602.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72328962.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\72330894.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72336818.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72355272.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72370114.jpg" />
@@ -4903,6 +5004,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\72439556.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72443568.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72491806.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\72502414.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72520073.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72529749.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72566043.jpg" />
@@ -4914,6 +5016,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\72657739.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72664875.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72677437.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\72700231.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72708264.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72714226.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\72714392.jpg" />
@@ -4973,6 +5076,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\73625877.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\73639099.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\73642296.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\73642297.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\73648243.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\73652465.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\73659078.jpg" />
@@ -5033,6 +5137,10 @@
     <Content Include="Assets\Yugioh\Img\Monsters\74641045.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\74644400.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\74677422.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\74677423.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\74677424.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\74677425.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\74677426.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\74703140.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\74711057.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\74713516.jpg" />
@@ -5064,6 +5172,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\75119040.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75130221.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75132317.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\75147529.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75162696.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75180828.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75198893.jpg" />
@@ -5102,6 +5211,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\75673220.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75675029.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75676192.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\75690317.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75713017.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75732622.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\75733063.jpg" />
@@ -5204,6 +5314,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\77092311.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77121851.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77135531.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\77150143.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77152542.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77153811.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77205367.jpg" />
@@ -5211,6 +5322,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\77235086.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77252217.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77307161.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\77330185.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77334267.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77336644.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77360173.jpg" />
@@ -5231,6 +5343,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\77568553.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77581312.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77585513.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\77585514.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77600660.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77603950.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\77608643.jpg" />
@@ -5266,6 +5379,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\78156759.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78161361.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78193831.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\78193832.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78202553.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78229193.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78243409.jpg" />
@@ -5276,10 +5390,13 @@
     <Content Include="Assets\Yugioh\Img\Monsters\78355370.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78358521.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78364470.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\78371393.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78391364.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78402798.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\78422252.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78423643.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78437364.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\78437365.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78486968.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78509901.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78512663.jpg" />
@@ -5303,6 +5420,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\78861134.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78868119.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78868776.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\78872731.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78876707.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78917791.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\78922939.jpg" />
@@ -5462,6 +5580,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\81386177.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\81434470.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\81470373.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\81471108.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\81480460.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\81480461.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\81481818.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\81492226.jpg" />
@@ -5503,6 +5623,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\82005435.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82012319.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82035781.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\82044279.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82044280.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82050203.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82065276.jpg" />
@@ -5559,6 +5680,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\82962242.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82971335.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\82994509.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\83011277.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83011278.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83021423.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83032858.jpg" />
@@ -5570,6 +5692,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\83107873.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83121692.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83135907.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\83152482.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83228073.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83235263.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83236601.jpg" />
@@ -5614,10 +5737,12 @@
     <Content Include="Assets\Yugioh\Img\Monsters\83994433.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\83994646.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84013237.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\84013238.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84025439.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84040113.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84055227.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84058253.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\84080938.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84080939.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84103702.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\84124261.jpg" />
@@ -5748,6 +5873,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\85991529.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86013171.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86039057.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\86062400.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86088138.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86099788.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86100785.jpg" />
@@ -5775,6 +5901,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\86346643.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86361354.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86377375.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\86395581.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86396750.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86401517.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86421986.jpg" />
@@ -5809,6 +5936,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\86952477.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86962245.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\86988864.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\87008374.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87010442.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87047161.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87052196.jpg" />
@@ -5825,10 +5953,12 @@
     <Content Include="Assets\Yugioh\Img\Monsters\87257460.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87259077.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87288189.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\87292536.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87294988.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87303357.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87319876.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87322377.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\87322378.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87327776.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87340664.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87347365.jpg" />
@@ -5846,6 +5976,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\87557188.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87564352.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87564935.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\87602890.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87608852.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87621407.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\87622767.jpg" />
@@ -5981,6 +6112,13 @@
     <Content Include="Assets\Yugioh\Img\Monsters\89609515.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89621922.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89631139.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631140.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631141.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631142.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631143.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631144.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631145.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89631146.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89642993.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89662401.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89662736.jpg" />
@@ -6002,6 +6140,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\89907227.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89928517.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89943723.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\89943724.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89959682.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\89987208.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90019393.jpg" />
@@ -6038,6 +6177,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\90579153.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90582719.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90590303.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\90590304.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90616316.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90640901.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\90642597.jpg" />
@@ -6071,6 +6211,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\91133740.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91140491.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91152256.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\91152257.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\91152258.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91188343.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91250514.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91258852.jpg" />
@@ -6122,6 +6264,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\91953000.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91996584.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\91998119.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\91998120.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\91998121.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92015800.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92039899.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92053608.jpg" />
@@ -6133,6 +6277,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\92176681.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92200612.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92204263.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\92246806.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92300891.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92327802.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\92361635.jpg" />
@@ -6457,6 +6602,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\97584500.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97584719.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97590747.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\97590748.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97612389.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97623219.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97631303.jpg" />
@@ -6475,6 +6621,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\97843505.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97854941.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97885363.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\97896503.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97904474.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97923414.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\97940434.jpg" />
@@ -6511,6 +6658,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\98446407.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\98456117.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\98502113.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\98502114.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\98502115.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\98506199.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\98555327.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\98558751.jpg" />
@@ -6553,6 +6702,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\99234526.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\99261403.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\99267150.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\99267151.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\99284890.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\99315585.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\99348756.jpg" />
@@ -6636,6 +6786,8 @@
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\15308295.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\15936370.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\16178681.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\16178682.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\16178683.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\16306932.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\17086528.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\17330916.jpg" />
@@ -6756,6 +6908,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\64450427.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\64496451.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\64973287.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\65025250.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\65472618.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\65518099.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\66104644.jpg" />
@@ -6826,6 +6979,7 @@
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\90036274.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\90885155.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\91182675.jpg" />
+    <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\91420254.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\91584698.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\91907707.jpg" />
     <Content Include="Assets\Yugioh\Img\Monsters\Pendulum\92536468.jpg" />
@@ -7107,6 +7261,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\11481610.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\11493868.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\11699941.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\11705261.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\11711438.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\11813722.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\11827244.jpg" />
@@ -7171,6 +7326,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\15248873.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\15256925.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\15259703.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\15259704.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\15305240.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\15381252.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\15449853.jpg" />
@@ -7219,6 +7375,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\17956906.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\18027138.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\18114794.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\18144506.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\18144507.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\18161786.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\18205590.jpg" />
@@ -7240,6 +7397,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\19159413.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\19162134.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\19186123.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\19230407.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\19230408.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\19312169.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\19337371.jpg" />
@@ -7403,6 +7561,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\27813661.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\27821104.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\27827272.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\27847700.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\27863269.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\27895597.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\27918963.jpg" />
@@ -7451,6 +7610,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\30548775.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\30552375.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\30562585.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\30600344.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\30606547.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\30653113.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\30683373.jpg" />
@@ -7490,6 +7650,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\32828635.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\32835363.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\32919136.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\32999573.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\33017655.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\33031674.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\33041277.jpg" />
@@ -7797,6 +7958,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\47660516.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\47679935.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\47852924.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\47852925.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\47870325.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\47882565.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\48015771.jpg" />
@@ -7926,6 +8088,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\54693926.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\54773234.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\54807656.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\54880296.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\54913680.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\54977057.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\55046718.jpg" />
@@ -7979,6 +8142,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\57554544.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\57734012.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\57782164.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\57836546.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\57902193.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\57916305.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\57953380.jpg" />
@@ -8059,6 +8223,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\61844784.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\61850482.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\61854111.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\61884774.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\61948106.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\61968753.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62161698.jpg" />
@@ -8071,6 +8236,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\62437430.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62472614.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62481203.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\62499965.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62829077.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62834295.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\62835876.jpg" />
@@ -8257,6 +8423,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\72302403.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\72332074.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\72345736.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\72355441.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\72405967.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\72446038.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\72537897.jpg" />
@@ -8271,6 +8438,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\72932673.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\73048641.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\73055622.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\73134081.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\73134082.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\73148972.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\73178098.jpg" />
@@ -8310,6 +8478,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\74665651.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\74694807.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\74717840.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\74728028.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\74741494.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\74825788.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\74839123.jpg" />
@@ -8377,6 +8546,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\78543464.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\78574395.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\78577570.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\78610936.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\78697395.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\78748366.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\78785392.jpg" />
@@ -8429,11 +8599,13 @@
     <Content Include="Assets\Yugioh\Img\Spells\81193865.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81231742.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81325903.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\81332143.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81380218.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81384993.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81385346.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81426505.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81439173.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\81439174.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81510157.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81524977.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\81670445.jpg" />
@@ -8480,6 +8652,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\83682725.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\83715234.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\83746708.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\83764718.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\83764719.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\83831356.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\83880087.jpg" />
@@ -8489,6 +8662,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\84171830.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\84206435.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\84220251.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\84257639.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\84257640.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\84428023.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\84482694.jpg" />
@@ -8510,6 +8684,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\85775486.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\85787173.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\85821180.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\85839825.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\85852291.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\86016245.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\86196216.jpg" />
@@ -8582,6 +8757,7 @@
     <Content Include="Assets\Yugioh\Img\Spells\90246973.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\90263923.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\90330453.jpg" />
+    <Content Include="Assets\Yugioh\Img\Spells\90330454.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\90351981.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\90374791.jpg" />
     <Content Include="Assets\Yugioh\Img\Spells\90384300.jpg" />
@@ -8780,12 +8956,17 @@
     <Content Include="Assets\Yugioh\Img\Tokens\09929399.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\10389143.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\11050416.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\11050417.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\11050418.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\11050419.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\12958920.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\12965762.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\13536607.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\14089429.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\14470846.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\14470847.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\15341822.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\15341823.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\15394084.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\15629802.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\16946850.jpg" />
@@ -8821,6 +9002,7 @@
     <Content Include="Assets\Yugioh\Img\Tokens\44586427.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\44689689.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\46173680.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\46173681.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\46647145.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\47658965.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\48115278.jpg" />
@@ -8837,6 +9019,7 @@
     <Content Include="Assets\Yugioh\Img\Tokens\59160189.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\60406592.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\60764582.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\60764583.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\62125439.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\62543394.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\63442605.jpg" />
@@ -8851,6 +9034,9 @@
     <Content Include="Assets\Yugioh\Img\Tokens\70391589.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\71645243.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\73915052.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\73915053.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\73915054.jpg" />
+    <Content Include="Assets\Yugioh\Img\Tokens\73915055.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\74440056.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\74983882.jpg" />
     <Content Include="Assets\Yugioh\Img\Tokens\75119041.jpg" />
@@ -9006,6 +9192,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\07617253.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\07811875.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\07852509.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\07852510.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\07922915.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\07935043.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\08038143.jpg" />
@@ -9050,8 +9237,10 @@
     <Content Include="Assets\Yugioh\Img\Traps\10118318.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10131855.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10282757.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\10312660.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10489311.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10537981.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\10612222.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10651797.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10759529.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\10813327.jpg" />
@@ -9170,6 +9359,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\18678554.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\18712704.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\18739764.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\18807108.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\18807109.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\18816758.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\19024706.jpg" />
@@ -9293,6 +9483,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\26557451.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\26586849.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\26647858.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\26708437.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\26781870.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\26822796.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\26834022.jpg" />
@@ -9439,6 +9630,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\35561352.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\35563539.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\35577420.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\35686187.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\35686188.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\35787450.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\36006208.jpg" />
@@ -9472,6 +9664,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\37313786.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\37383714.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\37390589.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\37390590.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\37412656.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\37421075.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\37436476.jpg" />
@@ -9530,6 +9723,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\41197012.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\41234315.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\41356845.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\41356846.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\41398771.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\41420027.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\41440817.jpg" />
@@ -9580,6 +9774,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\44209392.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\44397496.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\44472639.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\44487250.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\44509898.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\44536921.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\44584775.jpg" />
@@ -9719,6 +9914,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\54658815.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\54704216.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\54762426.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\54903668.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\54974237.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\54976796.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\55008284.jpg" />
@@ -9757,6 +9953,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\56916805.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\56920308.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\56993276.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\56993277.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\56995655.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57006589.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57047293.jpg" />
@@ -9773,6 +9970,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\57470761.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57585212.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57728570.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\57728571.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57753602.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57815601.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\57823578.jpg" />
@@ -9793,6 +9991,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\58531587.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\58607704.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\58621589.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\58628539.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\58787301.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\58851034.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\58873391.jpg" />
@@ -9933,6 +10132,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\68400115.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\68456353.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\68477598.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\68540058.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\68540059.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\68688135.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\68875140.jpg" />
@@ -9967,6 +10167,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\71272951.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\71417170.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\71442223.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\71541986.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\71587526.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\71652522.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\71782404.jpg" />
@@ -9999,6 +10200,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\73820802.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\73860462.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\73872164.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\73881652.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\73988674.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\74003290.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\74095602.jpg" />
@@ -10055,6 +10257,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\77561728.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\77622396.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\77754944.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\77754945.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\77778835.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\77783947.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\77826734.jpg" />
@@ -10096,11 +10299,13 @@
     <Content Include="Assets\Yugioh\Img\Traps\80143954.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80163754.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80193355.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\80193356.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80254726.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80280737.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80551130.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80560728.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80584548.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\80604091.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80604092.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80627281.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\80678380.jpg" />
@@ -10116,6 +10321,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\81128478.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\81167171.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\81172176.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\81172177.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\81210420.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\81218874.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\81223446.jpg" />
@@ -10152,6 +10358,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\83467607.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\83546647.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\83555666.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\83555667.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\83675475.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\83747250.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\83778600.jpg" />
@@ -10247,6 +10454,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\90557975.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\90669991.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\90740329.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\90740330.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\90846359.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\90934570.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\91078716.jpg" />
@@ -10370,6 +10578,7 @@
     <Content Include="Assets\Yugioh\Img\Traps\98666339.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\98753320.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\98827725.jpg" />
+    <Content Include="Assets\Yugioh\Img\Traps\98918572.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\98935722.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\98954106.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\98956134.jpg" />
@@ -10387,6 +10596,10 @@
     <Content Include="Assets\Yugioh\Img\Traps\99657399.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\99735427.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\99788587.jpg" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -10437,7 +10650,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Assets\MTG\" />
     <Folder Include="Assets\Pokemon\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Images\" />
   </ItemGroup>
   <ItemGroup>
