@@ -39,8 +39,7 @@ namespace TCGAssets.Controllers
             }
 
             Directories = new string[] { "Monsters", "Skills", "Spells", "Tokens", "Traps" };
-            JArray array = JArray.Parse(File.ReadAllText("C:/Users/artur/OneDrive/Desktop/GIT/TCG/TCGAssets/TCGAssets/Assets/" + tcg_name + "/JSON/Data.json"));
-
+            JArray array = JArray.Parse(File.ReadAllText(HttpContext.Current.Server.MapPath("../../Assets/") + tcg_name + "/JSON/Data.json"));
             foreach (JObject obj in array)
             {
                 Card card = JsonConvert.DeserializeObject<Card>(obj.ToString());
@@ -51,91 +50,6 @@ namespace TCGAssets.Controllers
                 }
                 cards.Add(card);
             }
-        }
-
-        //GET: Card
-        [Route("api/cards/get")]
-        public List<string> GetId(string id)
-        {
-            List<Card> filter_by_id = cards.Where(card => card.id.Contains(id)).Distinct().ToList();
-            List<string> result = new List<string>();
-
-            foreach (Card card in filter_by_id)
-            {
-                foreach (CardImage img in card.card_images)
-                {
-                    if (!result.Contains(img.id))
-                    {
-                        if (card.type.Contains("Monster"))
-                        {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", img.id));
-                        }
-                        if (card.type.Contains("Skill"))
-                        {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Skills/{0:00000000}.jpg", img.id));
-                        }
-                        if (card.type.Contains("Spell"))
-                        {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Spells/{0:00000000}.jpg", img.id));
-                        }
-                        if (card.type.Contains("Token"))
-                        {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Tokens/{0:00000000}.jpg", img.id));
-                        }
-                        if (card.type.Contains("Trap"))
-                        {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Traps/{0:00000000}.jpg", img.id));
-                        }
-                    }
-                }
-            }
-
-            return result.Distinct().ToList();
-        }
-
-        // GET: Card
-        [Route("api/cards/get/")]
-        public List<string> GetName(string name)
-        {
-            List<string> id_list = cards.Where(card => card.name.ToUpper().Contains(name.ToUpper())).Select(card => card.id).ToList();
-            List<string> result = new List<string>();
-
-            foreach (string numeric_id in id_list)
-            {
-                List<Card> filter_by_id = cards.Where(card => card.id.Contains(numeric_id)).Distinct().ToList();
-
-                foreach (Card card in filter_by_id)
-                {
-                    foreach (CardImage img in card.card_images)
-                    {
-                        if (!result.Contains(img.id))
-                        {
-                            if (card.type.Contains("Monster"))
-                            {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", img.id));
-                            }
-                            if (card.type.Contains("Skill"))
-                            {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Skills/{0:00000000}.jpg", img.id));
-                            }
-                            if (card.type.Contains("Spell"))
-                            {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Spells/{0:00000000}.jpg", img.id));
-                            }
-                            if (card.type.Contains("Token"))
-                            {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Tokens/{0:00000000}.jpg", img.id));
-                            }
-                            if (card.type.Contains("Trap"))
-                            {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Traps/{0:00000000}.jpg", img.id));
-                            }
-                        }
-                    }
-                }
-            }
-
-            return result.Distinct().ToList();
         }
 
         [Route("api/cards/properties/")]

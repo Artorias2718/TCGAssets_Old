@@ -10596,6 +10596,8 @@
     <Content Include="Assets\Yugioh\Img\Traps\99657399.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\99735427.jpg" />
     <Content Include="Assets\Yugioh\Img\Traps\99788587.jpg" />
+    <Content Include="Assets\Yugioh\JSON\Data.json" />
+    <Content Include="Assets\Yugioh\JSON\Data.min.json" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -10650,6 +10652,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Assets\MTG\" />
     <Folder Include="Assets\Pokemon\" />
+    <Folder Include="Assets\Yugioh\JSON\" />
     <Folder Include="Views\Images\" />
   </ItemGroup>
   <ItemGroup>
