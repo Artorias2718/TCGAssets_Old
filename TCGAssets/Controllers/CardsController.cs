@@ -44,6 +44,10 @@ namespace TCGAssets.Controllers
             {
                 Card card = JsonConvert.DeserializeObject<Card>(obj.ToString());
                 card.id = string.Format("{0:00000000}", int.Parse(card.id));
+                if(card.attribute == null)
+                {
+                    card.attribute = "";
+                }
                 foreach (CardImage img in card.card_images)
                 {
                     img.id = string.Format("{0:00000000}", int.Parse(img.id));
@@ -54,9 +58,9 @@ namespace TCGAssets.Controllers
 
         [Route("api/cards/properties/")]
         public List<string> GetProperties([FromUri]
-            string id = "", string name = "", string type = "", string desc = "", string atk = "", string def = "", string level = "", string race = "", string archetype = "")
+            string id = "", string name = "", string type = "", string desc = "", string atk = "", string def = "", string level = "", string race = "", string attribute = "", string archetype = ""
+        )
         {
-
             Func<Card, bool> query = card =>
               !string.IsNullOrEmpty(id) ? card.id.Contains(id)
             : !string.IsNullOrEmpty(name) ? card.name.ToUpper().Contains(name.ToUpper())
@@ -66,6 +70,7 @@ namespace TCGAssets.Controllers
             : !string.IsNullOrEmpty(def) ? card.def.Contains(def)
             : !string.IsNullOrEmpty(level) ? card.level.Contains(level)
             : !string.IsNullOrEmpty(race) ? card.race.ToUpper().Contains(race.ToUpper())
+            : !string.IsNullOrEmpty(attribute) ? card.attribute.ToUpper().Contains(attribute.ToUpper())
             : !string.IsNullOrEmpty(archetype) ? card.archetype.ToUpper().Contains(archetype.ToUpper())
             : false;
 

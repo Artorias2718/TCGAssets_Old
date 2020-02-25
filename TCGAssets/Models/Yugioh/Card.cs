@@ -15,6 +15,7 @@ namespace TCGAssets.Models.Yugioh
         public string def { get; set; }
         public string level { get; set; }
         public string race { get; set; }
+        public string attribute { get; set; }
         public string archetype { get; set; }
         public IEnumerable<CardSet> card_sets { get; set; }
         public IEnumerable<CardImage> card_images { get; set; }
