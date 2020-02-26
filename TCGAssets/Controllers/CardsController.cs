@@ -48,6 +48,22 @@ namespace TCGAssets.Controllers
                 {
                     card.attribute = "";
                 }
+
+                if (card.atk == null)
+                {
+                    card.atk = "";
+                }
+
+                if(card.def == null)
+                {
+                    card.def = "";
+                }
+
+                if (card.level == null)
+                {
+                    card.level = "";
+                }
+
                 foreach (CardImage img in card.card_images)
                 {
                     img.id = string.Format("{0:00000000}", int.Parse(img.id));
@@ -61,20 +77,92 @@ namespace TCGAssets.Controllers
             string id = "", string name = "", string type = "", string desc = "", string atk = "", string def = "", string level = "", string race = "", string attribute = "", string archetype = ""
         )
         {
-            Func<Card, bool> query = card =>
-              !string.IsNullOrEmpty(id) ? card.id.Contains(id)
-            : !string.IsNullOrEmpty(name) ? card.name.ToUpper().Contains(name.ToUpper())
-            : !string.IsNullOrEmpty(type) ? card.type.ToUpper().Contains(type.ToUpper())
-            : !string.IsNullOrEmpty(desc) ? card.desc.ToUpper().Contains(desc.ToUpper())
-            : !string.IsNullOrEmpty(atk) ? card.atk.Contains(atk)
-            : !string.IsNullOrEmpty(def) ? card.def.Contains(def)
-            : !string.IsNullOrEmpty(level) ? card.level.Contains(level)
-            : !string.IsNullOrEmpty(race) ? card.race.ToUpper().Contains(race.ToUpper())
-            : !string.IsNullOrEmpty(attribute) ? card.attribute.ToUpper().Contains(attribute.ToUpper())
-            : !string.IsNullOrEmpty(archetype) ? card.archetype.ToUpper().Contains(archetype.ToUpper())
-            : false;
+            //Func<Card, bool> query = card =>
+            //  !string.IsNullOrEmpty(id) ? card.id.Contains(id)
+            //: !string.IsNullOrEmpty(name) ? card.name.ToUpper().Contains(name.ToUpper())
+            //: !string.IsNullOrEmpty(type) ? card.type.ToUpper().Contains(type.ToUpper())
+            //: !string.IsNullOrEmpty(desc) ? card.desc.ToUpper().Contains(desc.ToUpper())
+            //: !string.IsNullOrEmpty(atk) ? card.atk.Contains(atk)
+            //: !string.IsNullOrEmpty(def) ? card.def.Contains(def)
+            //: !string.IsNullOrEmpty(level) ? card.level.Contains(level)
+            //: !string.IsNullOrEmpty(race) ? card.race.ToUpper().Contains(race.ToUpper())
+            //: !string.IsNullOrEmpty(attribute) ? card.attribute.ToUpper().Contains(attribute.ToUpper())
+            //: !string.IsNullOrEmpty(archetype) ? card.archetype.ToUpper().Contains(archetype.ToUpper())
+            //: false;
 
-            List<Card> filtered_set = cards.Where(query).Distinct().ToList();
+            //List<Card> filtered_set = cards.Where(query).Distinct().ToList();
+
+            List<Card> filtered_set = cards;
+                
+            if(!string.IsNullOrEmpty(id))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.id.Contains(id)
+                 select card).Distinct().ToList();
+            }
+
+            if(!string.IsNullOrEmpty(name))
+            {
+                filtered_set = (from card in filtered_set
+                 where card.name.ToUpper().Contains(name.ToUpper())
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(type))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.type.ToUpper().Contains(type.ToUpper())
+                 select card).Distinct().ToList();
+            }
+
+            if(!string.IsNullOrEmpty(desc))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.desc.ToUpper().Contains(desc.ToUpper())
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(atk))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.atk.Contains(atk)
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(def))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.def.Contains(def)
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(level))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.level.Contains(level)
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(race))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.race.ToUpper().Contains(race.ToUpper())
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(attribute))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.attribute.ToUpper().Contains(attribute.ToUpper())
+                 select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(archetype))
+            {
+                filtered_set = (from card in filtered_set 
+                 where card.archetype.ToUpper().Contains(archetype.ToUpper())
+                 select card).Distinct().ToList();
+            }
 
             List<string> result = new List<string>();
             
@@ -86,7 +174,14 @@ namespace TCGAssets.Controllers
                     {
                         if (card.type.Contains("Monster"))
                         {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", img.id));
+                            if(card.type.Contains("Pendulum"))
+                            {
+                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/Pendulum/{0:00000000}.jpg", img.id));
+                            }
+                            else
+                            {
+                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", img.id));
+                            }
                         }
                         if (card.type.Contains("Skill"))
                         {
