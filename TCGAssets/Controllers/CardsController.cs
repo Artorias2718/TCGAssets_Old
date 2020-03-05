@@ -77,21 +77,6 @@ namespace TCGAssets.Controllers
             string id = "", string name = "", string type = "", string desc = "", string atk = "", string def = "", string level = "", string race = "", string attribute = "", string archetype = ""
         )
         {
-            //Func<Card, bool> query = card =>
-            //  !string.IsNullOrEmpty(id) ? card.id.Contains(id)
-            //: !string.IsNullOrEmpty(name) ? card.name.ToUpper().Contains(name.ToUpper())
-            //: !string.IsNullOrEmpty(type) ? card.type.ToUpper().Contains(type.ToUpper())
-            //: !string.IsNullOrEmpty(desc) ? card.desc.ToUpper().Contains(desc.ToUpper())
-            //: !string.IsNullOrEmpty(atk) ? card.atk.Contains(atk)
-            //: !string.IsNullOrEmpty(def) ? card.def.Contains(def)
-            //: !string.IsNullOrEmpty(level) ? card.level.Contains(level)
-            //: !string.IsNullOrEmpty(race) ? card.race.ToUpper().Contains(race.ToUpper())
-            //: !string.IsNullOrEmpty(attribute) ? card.attribute.ToUpper().Contains(attribute.ToUpper())
-            //: !string.IsNullOrEmpty(archetype) ? card.archetype.ToUpper().Contains(archetype.ToUpper())
-            //: false;
-
-            //List<Card> filtered_set = cards.Where(query).Distinct().ToList();
-
             List<Card> filtered_set = cards;
                 
             if(!string.IsNullOrEmpty(id))
@@ -164,6 +149,13 @@ namespace TCGAssets.Controllers
                  select card).Distinct().ToList();
             }
 
+            List<int> monster = new List<int>();
+            List<int> pendulum = new List<int>();
+            List<int> skill = new List<int>();
+            List<int> spell = new List<int>();
+            List<int> token = new List<int>();
+            List<int> trap = new List<int>();
+
             List<string> result = new List<string>();
             
             foreach(Card card in filtered_set)
@@ -176,31 +168,87 @@ namespace TCGAssets.Controllers
                         {
                             if(card.type.Contains("Pendulum"))
                             {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/Pendulum/{0:00000000}.jpg", img.id));
+                                pendulum.Add(int.Parse(img.id));
                             }
                             else
                             {
-                                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", img.id));
+                                monster.Add(int.Parse(img.id));
                             }
                         }
                         if (card.type.Contains("Skill"))
                         {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Skills/{0:00000000}.jpg", img.id));
+                            skill.Add(int.Parse(img.id));
                         }
                         if (card.type.Contains("Spell"))
                         {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Spells/{0:00000000}.jpg", img.id));
+                            spell.Add(int.Parse(img.id));
                         }
                         if (card.type.Contains("Token"))
                         {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Tokens/{0:00000000}.jpg", img.id));
+                            token.Add(int.Parse(img.id));
                         }
                         if (card.type.Contains("Trap"))
                         {
-                            result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Traps/{0:00000000}.jpg", img.id));
+                            trap.Add(int.Parse(img.id));
                         }
                     }
                 }
+            }
+
+            if (monster.Count > 0)
+            {
+                monster = monster.Distinct().ToList();
+                monster.Sort();
+            }
+            if (pendulum.Count > 0)
+            {
+                pendulum = pendulum.Distinct().ToList();
+                pendulum.Sort();
+            }
+            if (skill.Count > 0)
+            {
+                skill = skill.Distinct().ToList();
+                skill.Sort();
+            }
+            if (spell.Count > 0)
+            {
+                spell = spell.Distinct().ToList();
+                spell.Sort();
+            }
+            if (token.Count > 0)
+            {
+                token = token.Distinct().ToList();
+                token.Sort();
+            }
+            if (trap.Count > 0)
+            {
+                trap = trap.Distinct().ToList();
+                trap.Sort();
+            }
+
+            foreach(int m_id in monster)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", m_id));
+            }
+            foreach(int p_id in pendulum)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/Pendulum/{0:00000000}.jpg", p_id));
+            }
+            foreach(int s_id in skill)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Skills/{0:00000000}.jpg", s_id));
+            }
+            foreach(int s_id in spell)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Spells/{0:00000000}.jpg", s_id));
+            }
+            foreach(int t_id in token)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Tokens/{0:00000000}.jpg", t_id));
+            }
+            foreach(int t_id in trap)
+            {
+                result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Traps/{0:00000000}.jpg", t_id));
             }
 
             return result;
