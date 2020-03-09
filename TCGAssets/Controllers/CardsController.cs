@@ -18,28 +18,13 @@ namespace TCGAssets.Controllers
 {
     public class CardsController : ApiController
     {
-        public string[] Directories { get; set; }
+        public string[] YugiohDirectories { get; set; }
         private static List<Card> cards = new List<Card>();
-        private static string tcg_name = "";
-        private static int tcg = 2;
 
         public CardsController()
         {
-            switch (tcg)
-            {
-                case 0:
-                    tcg_name = "MTG";
-                    break;
-                case 1:
-                    tcg_name = "Pokemon";
-                    break;
-                case 2:
-                    tcg_name = "Yugioh";
-                    break;
-            }
-
-            Directories = new string[] { "Monsters", "Skills", "Spells", "Tokens", "Traps" };
-            JArray array = JArray.Parse(File.ReadAllText(HttpContext.Current.Server.MapPath("../../Assets/") + tcg_name + "/JSON/Data.json"));
+            YugiohDirectories = new string[] { "Monsters", "Skills", "Spells", "Tokens", "Traps" };
+            JArray array = JArray.Parse(File.ReadAllText(HttpContext.Current.Server.MapPath("../../Assets/Yugioh/JSON/Data.json")));
             foreach (JObject obj in array)
             {
                 Card card = JsonConvert.DeserializeObject<Card>(obj.ToString());
@@ -72,7 +57,7 @@ namespace TCGAssets.Controllers
             }
         }
 
-        [Route("api/cards/properties/")]
+        [Route("api/cards/yugioh_properties/")]
         public List<string> GetProperties([FromUri]
             string id = "", string name = "", string type = "", string desc = "", string atk = "", string def = "", string level = "", string race = "", string attribute = "", string archetype = ""
         )
