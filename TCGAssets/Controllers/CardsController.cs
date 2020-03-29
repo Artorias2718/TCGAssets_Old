@@ -29,7 +29,7 @@ namespace TCGAssets.Controllers
             {
                 Card card = JsonConvert.DeserializeObject<Card>(obj.ToString());
                 card.id = string.Format("{0:00000000}", int.Parse(card.id));
-                if(card.attribute == null)
+                if (card.attribute == null)
                 {
                     card.attribute = "";
                 }
@@ -39,7 +39,7 @@ namespace TCGAssets.Controllers
                     card.atk = "";
                 }
 
-                if(card.def == null)
+                if (card.def == null)
                 {
                     card.def = "";
                 }
@@ -63,75 +63,75 @@ namespace TCGAssets.Controllers
         )
         {
             List<Card> filtered_set = cards;
-                
-            if(!string.IsNullOrEmpty(id))
-            {
-                filtered_set = (from card in filtered_set 
-                 where card.id.Contains(id)
-                 select card).Distinct().ToList();
-            }
 
-            if(!string.IsNullOrEmpty(name))
+            if (!string.IsNullOrEmpty(id))
             {
                 filtered_set = (from card in filtered_set
-                 where card.name.ToUpper().Contains(name.ToUpper())
-                 select card).Distinct().ToList();
+                                where card.id.Contains(id)
+                                select card).Distinct().ToList();
+            }
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                filtered_set = (from card in filtered_set
+                                where card.name.ToUpper().Contains(name.ToUpper())
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(type))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.type.ToUpper().Contains(type.ToUpper())
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.type.ToUpper().Contains(type.ToUpper())
+                                select card).Distinct().ToList();
             }
 
-            if(!string.IsNullOrEmpty(desc))
+            if (!string.IsNullOrEmpty(desc))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.desc.ToUpper().Contains(desc.ToUpper())
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.desc.ToUpper().Contains(desc.ToUpper())
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(atk))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.atk.Contains(atk)
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.atk.Contains(atk)
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(def))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.def.Contains(def)
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.def.Contains(def)
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(level))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.level.Contains(level)
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.level.Contains(level)
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(race))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.race.ToUpper().Contains(race.ToUpper())
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.race.ToUpper().Contains(race.ToUpper())
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(attribute))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.attribute.ToUpper().Contains(attribute.ToUpper())
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.attribute.ToUpper().Contains(attribute.ToUpper())
+                                select card).Distinct().ToList();
             }
 
             if (!string.IsNullOrEmpty(archetype))
             {
-                filtered_set = (from card in filtered_set 
-                 where card.archetype.ToUpper().Contains(archetype.ToUpper())
-                 select card).Distinct().ToList();
+                filtered_set = (from card in filtered_set
+                                where card.archetype.ToUpper().Contains(archetype.ToUpper())
+                                select card).Distinct().ToList();
             }
 
             List<int> monster = new List<int>();
@@ -142,8 +142,8 @@ namespace TCGAssets.Controllers
             List<int> trap = new List<int>();
 
             List<string> result = new List<string>();
-            
-            foreach(Card card in filtered_set)
+
+            foreach (Card card in filtered_set)
             {
                 foreach (CardImage img in card.card_images)
                 {
@@ -151,7 +151,7 @@ namespace TCGAssets.Controllers
                     {
                         if (card.type.Contains("Monster"))
                         {
-                            if(card.type.Contains("Pendulum"))
+                            if (card.type.Contains("Pendulum"))
                             {
                                 pendulum.Add(int.Parse(img.id));
                             }
@@ -211,27 +211,27 @@ namespace TCGAssets.Controllers
                 trap.Sort();
             }
 
-            foreach(int m_id in monster)
+            foreach (int m_id in monster)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/{0:00000000}.jpg", m_id));
             }
-            foreach(int p_id in pendulum)
+            foreach (int p_id in pendulum)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Monsters/Pendulum/{0:00000000}.jpg", p_id));
             }
-            foreach(int s_id in skill)
+            foreach (int s_id in skill)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Skills/{0:00000000}.jpg", s_id));
             }
-            foreach(int s_id in spell)
+            foreach (int s_id in spell)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Spells/{0:00000000}.jpg", s_id));
             }
-            foreach(int t_id in token)
+            foreach (int t_id in token)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Tokens/{0:00000000}.jpg", t_id));
             }
-            foreach(int t_id in trap)
+            foreach (int t_id in trap)
             {
                 result.Add(string.Format("http://localhost:62717/Assets/Yugioh/Img/Traps/{0:00000000}.jpg", t_id));
             }
